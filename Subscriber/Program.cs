@@ -9,7 +9,6 @@ namespace Subscriber
 		{
 			Console.Title = "Subscriber";
 			Configure.Transactions.Enable();
-			Configure.Features.Disable<NServiceBus.Features.SecondLevelRetries>();
 
 			Configure.With()
 				.DefineEndpointName("subscriber.input")
